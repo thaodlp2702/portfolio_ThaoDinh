@@ -307,14 +307,16 @@ body {
 .content-grid.two-col,
 .footer-links,
 .prototype-layout,
-.tools-grid {
+.tools-grid,
+.visual-section-grid {
   display: grid;
   gap: 18px;
 }
 
 .content-grid.two-col,
 .prototype-layout,
-.tools-grid {
+.tools-grid,
+.visual-section-grid {
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -368,6 +370,22 @@ body {
   background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(236,243,251,0.9));
 }
 
+.visual-image-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+}
+
+.visual-section-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 18px;
+  display: block;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -398,6 +416,20 @@ body {
 
 .tool-card {
   min-height: 220px;
+}
+
+.tool-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eaf3fc, #dcecff);
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 1rem;
+  margin-bottom: 16px;
 }
 
 .reflection-stack {
@@ -473,6 +505,7 @@ body {
   .content-grid.two-col,
   .prototype-layout,
   .tools-grid,
+  .visual-section-grid,
   .footer-inner,
   .footer-links {
     grid-template-columns: 1fr;
