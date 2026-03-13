@@ -93,7 +93,8 @@ body {
 .profile-card,
 .panel,
 .reflection-card,
-.gallery-card {
+.gallery-card,
+.learning-card {
   background: var(--surface);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(221, 230, 241, 0.95);
@@ -269,39 +270,25 @@ body {
   gap: 20px;
 }
 
-.assignment-section-block {
-  display: grid;
-  gap: 14px;
+.learning-card {
+  padding: 28px;
 }
 
-.assignment-head {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 2px;
+.learning-card-header {
+  margin-bottom: 18px;
 }
 
-.assignment-head h3 {
-  margin: 0;
+.learning-card-header h3 {
+  margin: 0 0 8px;
   font-size: clamp(1.35rem, 2vw, 2rem);
   line-height: 1.15;
   color: var(--text);
 }
 
-.assignment-subtitle {
-  margin: 6px 0 0;
+.learning-subtitle {
+  margin: 0;
   color: var(--muted);
-}
-
-.assignment-badge {
-  min-width: 78px;
-  text-align: center;
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #eaf3fc, #f2f7ff);
-  color: var(--primary);
-  font-size: 0.86rem;
-  font-weight: 800;
+  font-size: 1rem;
 }
 
 .content-grid.two-col,
@@ -441,6 +428,10 @@ body {
   margin-top: 18px;
 }
 
+.top-gap-small {
+  margin-top: 18px;
+}
+
 .site-footer {
   margin-top: 34px;
   background: #16283b;
@@ -534,20 +525,10 @@ body {
   .profile-card,
   .panel,
   .reflection-card,
-  .gallery-card {
+  .gallery-card,
+  .learning-card {
     padding: 22px;
     border-radius: 20px;
-  }
-
-  .assignment-head {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .assignment-badge {
-    min-width: unset;
-    display: inline-block;
-    width: fit-content;
   }
 
   .gallery-grid {
